@@ -1,0 +1,91 @@
+body {
+  margin: 40px;
+}
+
+.image {
+	grid-area: image;
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.awards {
+  grid-area: awards;
+}
+
+.office {
+  grid-area: office;
+}
+
+.meta {
+  grid-area: meta;
+}
+
+.rating {
+  grid-area: rating;
+}
+
+.votes {
+  grid-area: votes;
+}
+
+
+.container {
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: 200px 200px 200px;
+		grid-template-areas:
+    "image content content"
+		"awards  awards  awards"
+		"office office office"
+		"meta meta meta"
+		"rating  rating  rating"
+    "votes  votes  votes";
+		background-color: #fff;
+		color: #444;
+	}
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+	font-size: 80%;
+	text-align: center;
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.poster {
+	width: 100%;
+}
